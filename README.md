@@ -4,10 +4,10 @@ Just testing some new technologies...
 
  :+1: **Used technologies:**
 
->Spring Boot
->Spring Data JPA
->Spring Security
->Thymeleaf template pages
+-Spring Boot
+-Spring Data JPA
+-Spring Security
+-Thymeleaf template pages
 
  :+1: **Run project steps:**
 
