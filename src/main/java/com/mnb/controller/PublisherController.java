@@ -40,7 +40,7 @@ public class PublisherController {
 
         theModel.addAttribute("publishers", thePublisher);
 
-        return "publisher/publisher-form";
+        return "publisher-form";
     }
 
 

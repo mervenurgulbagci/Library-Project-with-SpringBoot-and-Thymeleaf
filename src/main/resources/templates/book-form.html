@@ -26,7 +26,7 @@
 
         <!-- Add hidden form field to handle update -->
         <input type="hidden" th:field="*{id}" />
-
+Book Name:
         <input type="text" th:field="*{book_name}"
                class="form-control mb-4 col-4" placeholder="Book name">
 
@@ -54,7 +54,9 @@
     </form>
 
     <hr>
+    <a th:href="@{/publisher/list}">Back to Publisher List</a>
     <a th:href="@{/books/list}">Back to Book List</a>
+    <a th:href="@{/author/list}">Back to Author List</a>
 
 </div>
 </body>

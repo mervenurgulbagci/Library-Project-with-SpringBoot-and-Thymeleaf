@@ -49,4 +49,9 @@ public class BookServiceImpl implements BookService{
     public void deleteById(int theId) {
         bookRepository.deleteById(theId);
     }
+
+    @Override
+    public List<Book> findBookByName(String keyword) {
+        return bookRepository.findByName(keyword);
+    }
 }

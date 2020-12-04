@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
 
 <head>
     <!-- Required meta tags -->
@@ -16,10 +17,11 @@
 <body>
 
 <div class="container">
-
     <h3>AUTHORS LIST</h3>
     <hr>
-
+    <a th:href="@{/author/showFormForAdd}" class="btn btn-primary btn-sm mb-3">
+        Add Author
+    </a>
     <table class="table table-bordered table-striped">
         <thead class="thead-dark">
         <tr>
@@ -40,18 +42,21 @@
                    class="btn btn-info btn-sm">
                     Update
                 </a>
+                <div sec:authorize="hasRole('ADMIN')">
                 <!-- Add "delete" button/link -->
                 <a th:href="@{/author/delete(authorId=${tempAuthor.id})}"
                    class="btn btn-danger btn-sm"
                    onclick="if (!(confirm('Are you sure you want to delete this author?'))) return false">
                     Delete
                 </a>
+                </div>
             </td>
         </tr>
         </tbody>
     </table>
-
+    <a th:href="@{/publisher/list}" class="btn btn-primary">Publisher List</a>
+    <a th:href="@{/author/list}" class="btn btn-primary">Author List</a>
+    <a th:href="@{/books/list}" class="btn btn-primary">Book List</a>
 </div>
-
 </body>
 </html>

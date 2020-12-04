@@ -12,8 +12,9 @@ import javax.persistence.*;
 @Data
 public class Book {
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
-    @Column(name = "BOOK_ID")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "book-numarator")
+    @SequenceGenerator(name = "book-numarator",  sequenceName = "BOOK_SEQ", allocationSize=1)
+    @Column(name = "ID")
     Integer id;
     @Column(name = "BOOK_NAME")
     String book_name;
@@ -29,4 +30,27 @@ public class Book {
     String description;
     @Column(name = "ISBN")
     String isbn;
+    @ManyToOne(cascade = {CascadeType.DETACH,CascadeType.MERGE,CascadeType.PERSIST,CascadeType.REFRESH})
+    @JoinColumn(name = "AUTHOR_ID")
+    Author author;
+
+    @ManyToOne(cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
+    @JoinColumn(name = "publisher_id")
+    private Publisher publisher;
+
+    public Author getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(Author author) {
+        this.author = author;
+    }
+
+    public Publisher getPublisher() {
+        return publisher;
+    }
+
+    public void setPublisher(Publisher publisher) {
+        this.publisher = publisher;
+    }
 }
