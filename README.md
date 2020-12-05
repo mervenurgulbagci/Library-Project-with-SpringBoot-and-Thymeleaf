@@ -2,12 +2,12 @@
 
 
 
- ## Used technologies:
+## Used technologies:
 
-- Spring Boot
-- Spring Data JPA
-- Spring Security
-- Thymeleaf template pages
+:pushpin: Spring Boot
+:pushpin: Spring Data JPA
+:pushpin: Spring Security
+:pushpin: Thymeleaf template pages
 
 ## Port
 ```
