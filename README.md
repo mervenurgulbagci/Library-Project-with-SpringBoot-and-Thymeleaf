@@ -13,3 +13,6 @@
 ```
   http://localhost:8282
 ```
+## Referenced articles
+[Thymeleaf](https://www.thymeleaf.org/doc/articles/layouts.html)
+[Security](https://www.thymeleaf.org/doc/articles/springsecurity.html)
