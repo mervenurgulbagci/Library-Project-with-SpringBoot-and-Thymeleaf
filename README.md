@@ -9,3 +9,7 @@
 - Spring Security
 - Thymeleaf template pages
 
+## Port
+```
+  http://localhost:8282
+```
