@@ -2,7 +2,7 @@
 
 
 
- :pushpin: ## Used technologies:
+ :pushpin: Used technologies:
 
 - Spring Boot
 - Spring Data JPA
