@@ -25,10 +25,22 @@ For building and running the application you need:
 ```
 ### Login Page
 ![Login](https://github.com/mervenurgulbagci/Library-Project-with-SpringBoot-and-Thymeleaf/blob/master/img/loginPage.PNG)
+
 ### Home Page
 ![HomePage](https://github.com/mervenurgulbagci/Library-Project-with-SpringBoot-and-Thymeleaf/blob/master/img/homePage.PNG)
+
 ### Books
 ![Books](https://github.com/mervenurgulbagci/Library-Project-with-SpringBoot-and-Thymeleaf/blob/master/img/booksList.PNG)
+
+### Add Book
+![Book Add](https://github.com/mervenurgulbagci/Library-Project-with-SpringBoot-and-Thymeleaf/blob/master/img/addBook.PNG)
+
+### Authors Page
+![Authors](https://github.com/mervenurgulbagci/Library-Project-with-SpringBoot-and-Thymeleaf/blob/master/img/authorList.PNG)
+
+### Publishers Page
+![Publishers](https://github.com/mervenurgulbagci/Library-Project-with-SpringBoot-and-Thymeleaf/blob/master/img/publishers.PNG)
+
 ## Referenced articles
 - [Thymeleaf](https://www.thymeleaf.org/doc/articles/layouts.html)
 - [Security](https://www.thymeleaf.org/doc/articles/springsecurity.html)
