@@ -1,16 +1,29 @@
-# Library Project with Spring Boot and Thymeleaf
+# Simple Library Management System
 
-Just testing some new technologies...
+## Application features:
+This project is a simple library management application. Book promotion within the application (book title, book sub-name, book series
+name, author, publishing house, isbn number, description), author promotion (Author Name, Description), publisher promotion (Publisher Name, Description).
+More than one book can be defined for an author. More than one book can be defined for a publishing house. Search by title, Series title, Author or ISBN.
+A record can be modified, can be reviewed or can be deleted.
 
- ## Used technologies:
-
+## Used technologies:
 - Spring Boot
 - Spring Data JPA
 - Spring Security
+- Oracle 11g Database
 - Thymeleaf template pages
 
-## Run project steps:
+## Requirements
+For building and running the application you need:
+- JDK 1.8 or newer
+- Lombok
+- Maven 3
 
-> Create new database for Library
-> Change database settings to yours in application.properties
-> Just run by "java -jar webLibrary-0.0.1-SNAPSHOT.jar", or as usual run on your IDE
+## Port
+```
+  http://localhost:8282
+```
+
+## Referenced articles
+- [Thymeleaf](https://www.thymeleaf.org/doc/articles/layouts.html)
+- [Security](https://www.thymeleaf.org/doc/articles/springsecurity.html)
