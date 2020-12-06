@@ -10,18 +10,18 @@ A record can be modified, can be reviewed or can be deleted.
 - Spring Boot
 - Spring Data JPA
 - Spring Security
-- Oracle 11g Database
+- H2 Database
 - Thymeleaf template pages
 
 ## Requirements
 For building and running the application you need:
 - JDK 1.8 or newer
 - Lombok
-- Maven 3
+- Maven
 
 ## Port
 ```
-  http://localhost:8282
+  http://localhost:8083
 ```
 ### Login Page
 ![Login](https://github.com/mervenurgulbagci/Library-Project-with-SpringBoot-and-Thymeleaf/blob/master/img/loginPage.PNG)
