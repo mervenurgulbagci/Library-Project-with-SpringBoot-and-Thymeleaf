@@ -11,6 +11,7 @@
     <title>BOOKS LIST</title>
 </head>
 <body>
+<div th:insert="fragments/header :: header"></div>
 <div class="container">
     <h3>BOOKS LIST</h3>
     <hr>
@@ -34,7 +35,7 @@
         <table class="table table-bordered table-striped">
             <thead class="thead-dark">
             <tr>
-                <th>ID</th>
+
                 <th>Book Name</th>
                 <th>Book Subname</th>
                 <th>Serial Name</th>
@@ -49,7 +50,7 @@
             <tbody>
             <tr th:each="tempBook : ${books}">
 
-                <td th:text="${tempBook.id}"/>
+
                 <td th:text="${tempBook.book_name}"/>
                 <td th:text="${tempBook.book_subname}"/>
                 <td th:text="${tempBook.serial_name}"/>
@@ -77,16 +78,6 @@
             </tr>
             </tbody>
         </table>
-    <a th:href="@{/publisher/list}" class="btn btn-primary">Publisher List</a>
-    <a th:href="@{/author/list}" class="btn btn-primary">Author List</a>
-    <a th:href="@{/books/list}" class="btn btn-primary">Book List</a>
-    <!-- Add a logout button -->
-    <form action="#" th:action="@{/logout}"
-          method="POST">
-
-        <input type="submit" value="Logout" class="btn btn-outline-primary mt-2" />
-
-    </form>
 </div>
 </body>
 </html>

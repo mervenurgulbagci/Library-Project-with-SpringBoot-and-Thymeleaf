@@ -15,7 +15,7 @@
 </head>
 
 <body>
-
+<div th:insert="fragments/header :: header"></div>
 <div class="container">
 
     <h3>PUBLISHERS LIST</h3>
@@ -26,7 +26,7 @@
     <table class="table table-bordered table-striped">
         <thead class="thead-dark">
         <tr>
-            <th>ID</th>
+
             <th>Publisher Name</th>
             <th>Description</th>
             <th>Action</th>
@@ -34,7 +34,7 @@
         </thead>
         <tbody>
         <tr th:each="tempPublisher : ${publishers}">
-            <td th:text="${tempPublisher.id}"/>
+
             <td th:text="${tempPublisher.publisher_name}"/>
             <td th:text="${tempPublisher.description}"/>
             <td>
@@ -55,9 +55,6 @@
         </tr>
         </tbody>
     </table>
-    <a th:href="@{/publisher/list}" class="btn btn-primary">Publisher List</a>
-    <a th:href="@{/author/list}" class="btn btn-primary">Author List</a>
-    <a th:href="@{/books/list}" class="btn btn-primary">Book List</a>
 </div>
 
 </body>

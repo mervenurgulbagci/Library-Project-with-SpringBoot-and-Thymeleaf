@@ -13,7 +13,7 @@
 </head>
 
 <body>
-
+<div th:insert="fragments/header :: header"></div>
 <div class="container">
 
     <h3>Publisher Directory</h3>
@@ -34,15 +34,8 @@
                class="form-control mb-4 col-4" placeholder="Description">
 
         <button type="submit" class="btn btn-info col-2">Save</button>
-
     </form>
-
     <hr>
-    <a th:href="@{/publisher/list}">Back to Publisher List</a>
-    <a th:href="@{/books/list}">Back to Book List</a>
-    <a th:href="@{/author/list}">Back to Author List</a>
-
-
 </div>
 </body>
 
