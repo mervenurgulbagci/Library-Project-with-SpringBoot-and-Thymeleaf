@@ -1,6 +1,7 @@
 package com.mnb.service;
 
-import com.mnb.dao.BookRepository;
+import com.mnb.exception.NotFoundException;
+import com.mnb.repository.BookRepository;
 import com.mnb.entity.Book;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
@@ -25,19 +26,8 @@ public class BookServiceImpl implements BookService{
 
     @Override
     public Book findById(int theId) {
-        Optional<Book> result = bookRepository.findById(theId);
-
-        Book theBook = null;
-
-        if (result.isPresent()) {
-            theBook = result.get();
-        }
-        else {
-            // we didn't find the book
-            throw new RuntimeException("Did not find book id - " + theId);
-        }
-
-        return theBook;
+        return bookRepository.findById(theId)
+                .orElseThrow(() -> new NotFoundException(String.format(" not found  with ID %d", theId)));
     }
 
     @Override

@@ -37,11 +37,13 @@
             <td th:text="${tempAuthor.author_name}"/>
             <td th:text="${tempAuthor.description}"/>
             <td>
+                <div sec:authorize="hasAnyRole('USER', 'ADMIN')">
                 <!-- Add "update" button/link -->
                 <a th:href="@{/author/showFormForUpdate(authorId=${tempAuthor.id})}"
                    class="btn btn-info btn-sm">
                     Update
                 </a>
+                </div>
                 <div sec:authorize="hasRole('ADMIN')">
                 <!-- Add "delete" button/link -->
                 <a th:href="@{/author/delete(authorId=${tempAuthor.id})}"

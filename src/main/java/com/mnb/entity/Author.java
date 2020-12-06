@@ -14,8 +14,7 @@ import java.util.List;
 @Data
 public class Author {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "author-numarator")
-    @SequenceGenerator(name = "author-numarator",  sequenceName = "AUTHOR_SEQ", allocationSize=1)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID")
     Integer id;
     @Column(name = "AUTHOR_NAME")

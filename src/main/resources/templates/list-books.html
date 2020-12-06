@@ -50,14 +50,13 @@
             <tbody>
             <tr th:each="tempBook : ${books}">
 
-
-                <td th:text="${tempBook.book_name}"/>
-                <td th:text="${tempBook.book_subname}"/>
-                <td th:text="${tempBook.serial_name}"/>
-                <td th:text="${tempBook.books_author}"/>
-                <td th:text="${tempBook.books_publisher}"/>
-                <td th:text="${tempBook.description}"/>
-                <td th:text="${tempBook.isbn}"/>
+                <td th:text="${tempBook.book_name}"></td>
+                <td th:text="${tempBook.book_subname}"></td>
+                <td th:text="${tempBook.serial_name}"></td>
+                <td th:text="${tempBook.books_author}"></td>
+                <td th:text="${tempBook.books_publisher}"></td>
+                <td th:text="${tempBook.description}"></td>
+                <td th:text="${tempBook.isbn}"></td>
                 <td>
                     <div sec:authorize="hasAnyRole('USER', 'ADMIN')">
                         <!-- Add "update" button/link -->

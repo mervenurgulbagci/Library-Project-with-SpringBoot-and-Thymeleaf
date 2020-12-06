@@ -12,8 +12,7 @@ import javax.persistence.*;
 @Data
 public class Publisher {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "publisher-numarator")
-    @SequenceGenerator(name = "publisher-numarator",  sequenceName = "PUBLISHER_SEQ", allocationSize=1)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID")
     Integer id;
     @Column(name = "PUBLISHER_NAME")

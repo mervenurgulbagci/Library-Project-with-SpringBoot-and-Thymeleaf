@@ -1,4 +1,4 @@
-package com.mnb.dao;
+package com.mnb.repository;
 
 import com.mnb.entity.Book;
 import org.springframework.data.jpa.repository.JpaRepository;

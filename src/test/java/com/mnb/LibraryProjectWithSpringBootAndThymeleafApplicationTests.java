@@ -10,4 +10,5 @@ class LibraryProjectWithSpringBootAndThymeleafApplicationTests {
 	void contextLoads() {
 	}
 
+
 }

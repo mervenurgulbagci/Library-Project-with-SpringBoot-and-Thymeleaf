@@ -1,7 +1,7 @@
 package com.mnb.service;
 
-import com.mnb.dao.PublisherRepository;
-import com.mnb.entity.Author;
+import com.mnb.exception.NotFoundException;
+import com.mnb.repository.PublisherRepository;
 import com.mnb.entity.Publisher;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
@@ -26,7 +26,7 @@ public class PublisherServiceImpl implements  PublisherService{
 
     @Override
     public Publisher findById(int theId) {
-        Optional<Publisher> result = publisherRepository.findById(theId);
+       /* Optional<Publisher> result = publisherRepository.findById(theId);
 
         Publisher thePublisher = null;
 
@@ -39,7 +39,12 @@ public class PublisherServiceImpl implements  PublisherService{
         }
 
         return thePublisher;
+
+ */
+         return publisherRepository.findById(theId)
+                .orElseThrow(() -> new NotFoundException(String.format("Publisher not found  with ID %d", theId)));
     }
+
 
     @Override
     public void save(Publisher thePublisher) {

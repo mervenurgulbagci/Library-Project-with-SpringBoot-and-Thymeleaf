@@ -1,6 +1,6 @@
 package com.mnb.service;
 
-import com.mnb.dao.AuthorRepository;
+import com.mnb.repository.AuthorRepository;
 import com.mnb.entity.Author;
 import com.mnb.entity.Book;
 import lombok.AccessLevel;

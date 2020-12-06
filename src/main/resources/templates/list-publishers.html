@@ -35,14 +35,16 @@
         <tbody>
         <tr th:each="tempPublisher : ${publishers}">
 
-            <td th:text="${tempPublisher.publisher_name}"/>
-            <td th:text="${tempPublisher.description}"/>
+            <td th:text="${tempPublisher.publisher_name}"></td>
+            <td th:text="${tempPublisher.description}"></td>
             <td>
+                <div sec:authorize="hasAnyRole('USER', 'ADMIN')">
                 <!-- Add "update" button/link -->
                 <a th:href="@{/publisher/showFormForUpdate(publisherId=${tempPublisher.id})}"
                    class="btn btn-info btn-sm">
                     Update
                 </a>
+                </div>
                 <div sec:authorize="hasRole('ADMIN')">
                 <!-- Add "delete" button/link -->
                 <a th:href="@{/publisher/delete(publisherId=${tempPublisher.id})}"
