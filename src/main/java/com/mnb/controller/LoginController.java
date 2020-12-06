@@ -6,17 +6,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class LoginController {
-    @RequestMapping("/")
-    public String redirectHome() {
-        return "redirect:/home";
-    }
+
     @RequestMapping("/login")
     public String showMyLoginPage() {
         return "login";
     }
-    @RequestMapping("/home")
+    @RequestMapping("/index")
     public String showMustGoOn(){
-        return "home";
+        return "index";
     }
     // add request mapping for /access-denied
     @PostMapping("/access-denied")
