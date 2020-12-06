@@ -23,11 +23,11 @@ For building and running the application you need:
 ```
   http://localhost:8282
 ```
-Login Page
+### Login Page
 ![Login](https://github.com/mervenurgulbagci/Library-Project-with-SpringBoot-and-Thymeleaf/blob/master/img/loginPage.PNG)
-Home Page
+### Home Page
 ![HomePage](https://github.com/mervenurgulbagci/Library-Project-with-SpringBoot-and-Thymeleaf/blob/master/img/homePage.PNG)
-Books
+### Books
 ![Books](https://github.com/mervenurgulbagci/Library-Project-with-SpringBoot-and-Thymeleaf/blob/master/img/booksList.PNG)
 ## Referenced articles
 - [Thymeleaf](https://www.thymeleaf.org/doc/articles/layouts.html)
