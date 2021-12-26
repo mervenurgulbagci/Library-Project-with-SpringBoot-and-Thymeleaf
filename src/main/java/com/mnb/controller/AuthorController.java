@@ -1,7 +1,6 @@
 package com.mnb.controller;
 
 import com.mnb.entity.Author;
-import com.mnb.entity.Book;
 import com.mnb.service.AuthorService;
 import com.mnb.service.BookService;
 import lombok.AccessLevel;
@@ -10,9 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
 
