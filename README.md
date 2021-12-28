@@ -20,9 +20,8 @@ For building and running the application you need:
 - Maven
 
 ## Run
-```
-  https://spring-thymeleaf-library.herokuapp.com/
-```
+- [View on Herkoku](https://www.thymeleaf.org/doc/articles/layouts.html)
+
 ### Login Page
 ![Login](https://github.com/mervenurgulbagci/Library-Project-with-SpringBoot-and-Thymeleaf/blob/master/img/loginPage.PNG)
 
