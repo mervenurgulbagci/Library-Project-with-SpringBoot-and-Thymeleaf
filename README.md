@@ -1,6 +1,6 @@
 # Simple Library Management System
 
-- [View on Herkoku](https://www.thymeleaf.org/doc/articles/layouts.html)
+- [View on Herkoku](https://spring-thymeleaf-library.herokuapp.com/login)
 
 ## Application features:
 This project is a simple library management application. Book promotion within the application (book title, book sub-name, book series
