@@ -19,9 +19,9 @@ For building and running the application you need:
 - Lombok
 - Maven
 
-## Port
+## Run
 ```
-  http://localhost:8083
+  https://spring-thymeleaf-library.herokuapp.com/
 ```
 ### Login Page
 ![Login](https://github.com/mervenurgulbagci/Library-Project-with-SpringBoot-and-Thymeleaf/blob/master/img/loginPage.PNG)
