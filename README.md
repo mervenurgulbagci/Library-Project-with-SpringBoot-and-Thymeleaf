@@ -1,5 +1,7 @@
 # Simple Library Management System
 
+- [View on Herkoku](https://www.thymeleaf.org/doc/articles/layouts.html)
+
 ## Application features:
 This project is a simple library management application. Book promotion within the application (book title, book sub-name, book series
 name, author, publishing house, isbn number, description), author promotion (Author Name, Description), publisher promotion (Publisher Name, Description).
@@ -18,9 +20,6 @@ For building and running the application you need:
 - JDK 1.8 or newer
 - Lombok
 - Maven
-
-## Run
-- [View on Herkoku](https://www.thymeleaf.org/doc/articles/layouts.html)
 
 ### Login Page
 ![Login](https://github.com/mervenurgulbagci/Library-Project-with-SpringBoot-and-Thymeleaf/blob/master/img/loginPage.PNG)
