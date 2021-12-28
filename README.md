@@ -27,10 +27,10 @@ For building and running the application you need:
 ![Login](https://github.com/mervenurgulbagci/Library-Project-with-SpringBoot-and-Thymeleaf/blob/master/img/loginPage.PNG)
 
 ### Home Page
-![HomePage](https://github.com/mervenurgulbagci/Library-Project-with-SpringBoot-and-Thymeleaf/blob/master/img/homePage.PNG)
+![HomePage](https://github.com/mervenurgulbagci/Library-Project-with-SpringBoot-and-Thymeleaf/blob/master/img/homepage.JPG)
 
 ### Books
-![Books](https://github.com/mervenurgulbagci/Library-Project-with-SpringBoot-and-Thymeleaf/blob/master/img/booksList.PNG)
+![Books](https://github.com/mervenurgulbagci/Library-Project-with-SpringBoot-and-Thymeleaf/blob/master/img/booksList.JPG)
 
 ### Add Book
 ![Book Add](https://github.com/mervenurgulbagci/Library-Project-with-SpringBoot-and-Thymeleaf/blob/master/img/addBook.PNG)
