@@ -2,6 +2,14 @@
 
 - [View on Herkoku](https://spring-thymeleaf-library.herokuapp.com/login)
 
+- Login as Admin 
+username: merve
+password: test123
+
+- Login as User
+username: bilal
+password: test123
+
 ## Application features:
 This project is a simple library management application. Book promotion within the application (book title, book sub-name, book series
 name, author, publishing house, isbn number, description), author promotion (Author Name, Description), publisher promotion (Publisher Name, Description).
