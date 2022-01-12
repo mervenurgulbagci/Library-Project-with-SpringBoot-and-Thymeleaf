@@ -16,15 +16,15 @@ public class Book {
     @Column(name = "ID")
     Integer id;
     @Column(name = "BOOK_NAME")
-    String book_name;
+    String bookName;
     @Column(name = "BOOK_SUBNAME")
-    String book_subname;
+    String bookSubname;
     @Column(name = "BOOK_SERIAL_NAME")
-    String serial_name;
+    String serialName;
     @Column(name = "BOOKS_AUTHOR")
-    String books_author;
+    String booksAuthor;
     @Column(name = "BOOKS_PUBLISHER")
-    String books_publisher;
+    String booksPublisher;
     @Column(name = "DESCRIPTION")
     String description;
     @Column(name = "ISBN")
@@ -61,44 +61,44 @@ public class Book {
         this.id = id;
     }
 
-    public String getBook_name() {
-        return book_name;
+    public String getBookName() {
+        return bookName;
     }
 
-    public void setBook_name(String book_name) {
-        this.book_name = book_name;
+    public void setBookName(String bookName) {
+        this.bookName = bookName;
     }
 
-    public String getBook_subname() {
-        return book_subname;
+    public String getBookSubname() {
+        return bookSubname;
     }
 
-    public void setBook_subname(String book_subname) {
-        this.book_subname = book_subname;
+    public void setBookSubname(String bookSubname) {
+        this.bookSubname = bookSubname;
     }
 
-    public String getSerial_name() {
-        return serial_name;
+    public String getSerialName() {
+        return serialName;
     }
 
-    public void setSerial_name(String serial_name) {
-        this.serial_name = serial_name;
+    public void setSerialName(String serialName) {
+        this.serialName = serialName;
     }
 
-    public String getBooks_author() {
-        return books_author;
+    public String getBooksAuthor() {
+        return booksAuthor;
     }
 
-    public void setBooks_author(String books_author) {
-        this.books_author = books_author;
+    public void setBooksAuthor(String booksAuthor) {
+        this.booksAuthor = booksAuthor;
     }
 
-    public String getBooks_publisher() {
-        return books_publisher;
+    public String getBooksPublisher() {
+        return booksPublisher;
     }
 
-    public void setBooks_publisher(String books_publisher) {
-        this.books_publisher = books_publisher;
+    public void setBooksPublisher(String booksPublisher) {
+        this.booksPublisher = booksPublisher;
     }
 
     public String getDescription() {

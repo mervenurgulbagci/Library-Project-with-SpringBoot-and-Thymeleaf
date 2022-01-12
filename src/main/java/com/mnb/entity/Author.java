@@ -18,13 +18,13 @@ public class Author {
     @Column(name = "ID")
     Integer id;
     @Column(name = "AUTHOR_NAME")
-    String author_name;
+    String authorName;
     @Column(name = "DESCRIPTION")
     String description;
     @OneToMany(fetch = FetchType.LAZY,
             mappedBy = "author",
             cascade = {CascadeType.PERSIST,CascadeType.DETACH,CascadeType.MERGE,CascadeType.REFRESH})
-    List<Book> booksList=new ArrayList<Book>();
+    List<Book> booksList=new ArrayList<>();
 
     public void add(Book tempBook){
         if (booksList==null){
@@ -44,12 +44,12 @@ public class Author {
         this.id = id;
     }
 
-    public String getAuthor_name() {
-        return author_name;
+    public String getAuthorName() {
+        return authorName;
     }
 
-    public void setAuthor_name(String author_name) {
-        this.author_name = author_name;
+    public void setAuthorName(String authorName) {
+        this.authorName = authorName;
     }
 
     public String getDescription() {

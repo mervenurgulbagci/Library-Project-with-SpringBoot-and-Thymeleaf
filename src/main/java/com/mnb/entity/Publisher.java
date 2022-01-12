@@ -16,7 +16,7 @@ public class Publisher {
     @Column(name = "ID")
     Integer id;
     @Column(name = "PUBLISHER_NAME")
-    String publisher_name;
+    String publisherName;
     @Column(name = "DESCRIPTION")
     String description;
 }
